@@ -10,4 +10,4 @@ def uppercase(str):
         else:
             char = i
         print(char, end="")
-    print("")
+    print()
