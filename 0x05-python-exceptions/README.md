@@ -1,4 +1,5 @@
 # 0x05-python-exceptions
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/070710952984e4d126e114405cefe83af2271ce8.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T094324Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=646229f8f0131ca0671aeb4f712be80c3111b22676ef4950ff9a7000bed5b7df)
 ### General
 * Why Python programming is awesome
 * What’s the difference between errors and exceptions
