@@ -1,0 +1,24 @@
+The ``0-add_integer`` test module
+============================
+
+Using ``add_integer``
+---------------------
+
+This is an example text file in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
+
+	>>> import sys
+	>>> sys.path.insert(1, '../')
+	>>> func = __import__("0-add_integer")
+	>>> add_integer = func.add_integer
+
+Now use it:
+
+	>>> add_integer(6, 4)
+	10
+	>>> add_integer(0)
+	98
+	>>> add_integer(-1)
+	97
+	>>> add_integer(10.5)
+	108
