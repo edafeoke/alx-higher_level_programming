@@ -1,0 +1,25 @@
+#Imports
+>>> sys =__import__('sys')
+>>> sys.path.insert(1, "../")
+>>> func = __import__("3-say_my_name").say_my_name
+
+#Type checks
+>>> func(34, "Oke")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> func("Edafe", 7)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> func(True, "")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#Correct outputs
+----------------
+>>> func("Edafe", "Oke")
+My name is Edafe Oke
