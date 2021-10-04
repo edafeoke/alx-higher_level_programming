@@ -5,11 +5,14 @@
 class Rectangle():
     '''
     A rectangle class
-
+    Attributes:
+        number_of_instances
     Args:
         width: An integer greater than -1
         height: An integer greater than -1
     '''
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         '''init method'''
@@ -21,6 +24,7 @@ class Rectangle():
             raise TypeError("height must be an integer")
         if height < 0:
             raise ValueError("height must be >= 0")
+        type(self).number_of_instances += 1
         self.__width = width
         self.__height = height
 
@@ -82,4 +86,5 @@ class Rectangle():
         """Print a message for every deletion of
         the rectangle.
         """
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
