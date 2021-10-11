@@ -12,7 +12,6 @@ class MyList(list):
         list: a list of integers
     '''
 
-
     def print_sorted(self):
         '''
         A method that prits a list in ascending order
