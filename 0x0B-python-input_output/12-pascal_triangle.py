@@ -10,7 +10,7 @@ def pascal_triangle(n):
             n(int): to be repped
     """
     triangle = []
-    inner_list  = []
+    inner_list = []
     if not n <= 0:
         for i in range(n):
             innerlist.append(i + 1)
