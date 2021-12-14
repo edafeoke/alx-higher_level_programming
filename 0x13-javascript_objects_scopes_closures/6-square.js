@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let SquareS = require('./5-square.js');
+const SquareS = require('./5-square');
 
 class Square extends SquareS {
   constructor (size) {
@@ -13,8 +13,8 @@ class Square extends SquareS {
       for (let i = 0; i < this.size; i++) {
         let string = '';
         for (let j = 0; j < this.size; j++) {
-	  string += c;
-	}
+          string += c;
+        }
         console.log(string);
       }
     } else {
