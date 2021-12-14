@@ -1,8 +1,9 @@
 #!/usr/bin/node
 
-const num = parseInt(require('process').argv[2]);
+const num = require('process').argv[2];
 
 const factorial = n => {
+  n = parseInt(n);
   if (!n) {
     return 1;
   }
