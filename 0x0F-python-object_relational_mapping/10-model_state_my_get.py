@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-'''
-Task 8
-'''
-
+"""
+Lists all State objects that contain
+the letter a from the database hbtn_0e_6_usa
+"""
 import sys
-from model_state import Base, State
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
+from model_state import Base, State
 
 
 if __name__ == "__main__":
@@ -15,9 +15,9 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
     session = Session(engine)
-    s = session.query(State).order_by(State.id).one()
+    s = session.query(State).filter(State.name == sys.argv[4]).first()
     if s:
-        print("{}: {}".format(s.id, s.name))
+        print(s.id)
     else:
-        print("Nothing")
+        print('Not found')
     session.close()
