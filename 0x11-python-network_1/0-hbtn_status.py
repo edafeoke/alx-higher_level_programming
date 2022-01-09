@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 '''0-hbtn_status module'''
 
-from urllib import request
+import urllib
 
 if __name__ == "__main__":
-    with request.urlopen('https://intranet.hbtn.io/status') as res:
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as res:
         content = res.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
